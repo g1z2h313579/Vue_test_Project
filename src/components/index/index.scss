@@ -1,0 +1,55 @@
+.content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .con-left{
+        .recom,.new-release{
+            h2{
+                font-size: 18px;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                li{
+                    width: 430px;
+                    height: 108px;
+                    margin: 3px;
+                    background-color: darkgreen;
+                    list-style: none;
+                }
+            }
+        }
+        .new-release{
+            ul{
+                li{
+                    width: 866px;
+                    height: 190px;
+                }
+            }
+        }
+    }
+
+    .con-right{
+        .tag{
+            width: 290px;
+            height: 266px;
+            background-color: green;
+        }
+    }
+   
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+    .content{
+        flex-wrap: wrap;
+        .con-left{
+            width: 354px;
+        }
+        .con-right{
+            display: none;
+        }
+    }
+
+}

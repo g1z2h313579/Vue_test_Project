@@ -1,0 +1,52 @@
+nav.pc-nav{
+    width: 100%;
+}
+@media only screen and  (min-width: 1400px) {
+    nav.pc-nav{
+        height: 50px;
+    }
+}
+.nnva-block{
+    height: 50px;
+}
+.nnva-block li{
+    position: relative;
+    >a{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    a.active{
+        color: red!important;
+    }
+    .sub-nav{
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 30px;
+        display: none;
+        >li > a{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+.nnva-block li:hover .sub-nav{
+    display: block!important
+}
+
+.silde-nav{
+    display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+    .silde-nav{
+        display: block;
+        width: 100%;
+    }
+    .nnva-block{
+        display: none!important
+    }
+}
